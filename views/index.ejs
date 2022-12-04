@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Message Place</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <a href="./new">POST!</a>
+    <ul>
+      <% for (m in messages){ %>
+        <div class="message">
+          <h2><%=messages[m].user%></h2>
+          <div class="vl"></div>
+          <p><%=messages[m].text%></p>
+        </div>
+      <%}%>
+    </ul>
   </body>
 </html>

@@ -6,3 +6,28 @@ body {
 a {
   color: #00B7FF;
 }
+
+h2 {
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type=text] {
+}
+
+.message {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.vl {
+  border: 1px solid grey;
+  height: 1rem;
+  margin-bottom: 0.2rem;
+}
